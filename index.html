@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MT - Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo"> MT</a>
+
+      <button class="menu-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#home" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#about" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#blog" class="navbar-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="header-actions">
+          <a href="#" class="header-action-link">Log in</a>
+
+          <a href="#" class="header-action-link">Register</a>
+        </div>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- HOME SECTION -->
+      <section class="home" id="home">
+        <div class="container">
+          <div class="home-content">
+            <h1 class="home-title">MT Landing Page</h1><br> 
+            <p class="home-text">A Practice in Developing a Responsive Landing Page.</p>
+
+          <figure class="home-cover">
+            <img src="/assets/cover.jpeg" alt="Cover">
+          </figure>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-icon">
+              <ion-icon name="person"></ion-icon>
+            </div>
+
+            
+            <h2 class="h2 about-title">About Me</h2>
+            <p class="about-text">Hello! My name is Tuan. I'm still a newbie, but I have a passion for designing eye-catching and user-friendly websites. I hope to improve even more with every project.</p>
+    
+          </div>
+
+      </section>
+
+      <!-- BLOG SECTION -->
+      <section class="blog" id="blog">
+        <div class="container">
+          <h2 class="h2 section-title">Blogs</h2>
+          <p class="section-text">Check out how beautiful and stunning about my country Vietnam.</p>
+          <ul class="blog-list">
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="/assets/blog-banner-1.jpg" alt="">
+                </figure>
+                <div class="blog-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2024-08-24">August 24, 2024</time>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="/assets/blog-banner-2.jpg" alt="">
+                </figure>
+                <div class="blog-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2024-08-24">August 24, 2024</time>
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+                <figure class="blog-banner">
+                  <img src="/assets/blog-banner-3.jpg" alt="">
+                </figure>
+                <div class="blog-meta">
+                  <span>
+                    <ion-icon name="calendar-outline"></ion-icon>
+                    <time datetime="2024-08-24">August 24, 2024</time>
+                  </span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <h2 class="contact section-title">Contact</h2>
+          <div class="contact-wrapper">
+            <form action="" class="contact-form">
+              <div class="wrapper-flex">
+                <div class="input-wrapper">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" id="name" required placeholder="Enter Your Name" class="input-field"> 
+                </div>
+                <div class="input-wrapper">
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email" required placeholder="Enter Your Email" class="input-field">
+                </div>
+              </div>
+              <label for="message">Message:</label>
+              <textarea name="message" id="message" required placeholder="Type Your Message" class="input-field"></textarea>
+              <button type="submit" class="btn btn-outline">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </button> 
+            </form>
+
+            <ul class="contact-list">
+              <li>
+                <a href="#" class="contact-link">
+                  <ion-icon name="mail"></ion-icon>
+                  <span>: example@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact-link">
+                  <ion-icon name="globe"></ion-icon>
+                  <span>: www.website.com</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact-link">
+                  <ion-icon name="call"></ion-icon>
+                  <span>: (+84) 123 456 7890</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="contact-link">
+                  <ion-icon name="location"></ion-icon>
+                  <address>: Viet Nam, Da Nang</address>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <p class="footer-text">Please contact me through these social links.</p>
+          <ul class="social-list">
+            <li><a href="#" class="social-link"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+            <li><a href="#" class="social-link"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2024 <a href="">MT</a> - All Right Reserved
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/landingpage/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
